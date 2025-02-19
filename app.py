@@ -2,7 +2,12 @@ from flask import Flask , send_from_directory, render_template , request
 import requests
 from math import floor
 from utils import *
+import os
+import json
 
+
+DATA_DIR = "/app/data"
+os.makedirs(DATA_DIR, exist_ok=True) 
 
 app = Flask(__name__)
 API_KEY = 'c44171366d41778194a8018ab5156f06' 
@@ -27,6 +32,9 @@ def weather():
     wind = data["wind"]["speed"]
     wind = floor(wind * 2.23694)
 
+    file_path = os.path.join(DATA_DIR, f"{city}.json")
+    with open(file_path, "w") as f:
+        json.dump(data, f, indent=4)
 
     icon = data['weather'][0]['icon']
     icon_url = f'https://openweathermap.org/img/wn/{icon}.png'
