@@ -1,0 +1,45 @@
+{
+    "coord": {
+        "lon": -2.364,
+        "lat": 47.2922
+    },
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "overcast clouds",
+            "icon": "04d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 8.81,
+        "feels_like": 7.75,
+        "temp_min": 8.81,
+        "temp_max": 8.81,
+        "pressure": 1015,
+        "humidity": 100,
+        "sea_level": 1015,
+        "grnd_level": 1014
+    },
+    "visibility": 8000,
+    "wind": {
+        "speed": 2.06,
+        "deg": 140
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1739957277,
+    "sys": {
+        "type": 1,
+        "id": 6583,
+        "country": "FR",
+        "sunrise": 1739948876,
+        "sunset": 1739986737
+    },
+    "timezone": 3600,
+    "id": 3019766,
+    "name": "La Baule-Escoublac",
+    "cod": 200
+}
