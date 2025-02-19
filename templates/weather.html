@@ -1,0 +1,22 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/static/css/weather.css' />
+    <title>{{city}} Weather </title>
+</head>
+<body>
+    <a href="/">
+        <img src="https://img.icons8.com/?size=512&id=73&format=png" alt="home" id="home">
+    </a>
+    <div class="info">
+        <h1>{{city}}</h1>
+        <img src="{{ icon_url }}" alt="Weather">
+        <p>Temp: {{temperature}} ° C</p>
+        <p>temp min : {{temperature_min}}</p>
+        <p>temp max : {{temperature_max}} </p>
+        <p>Wind : {{wind}} mph | Humidity : {{humidity}} %</p>
+    </div>  
+</body>
+</html>

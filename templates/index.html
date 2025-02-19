@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='/static/css/index.css' />
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <div class="welcome">
+        <h1>Welcome to my Weather App</h1>
+    </div>
+    <div class="findCity">
+        <form action="{{url_for('weather')}}" method="GET">
+            <input type="text" name="city" placeholder="Find Weather of a City">
+            <button type="submit">find</button>
+        </form>
+    </div>
+  
+    <div class="listOfCards">
+    {% for city in cities %}
+        <div class="cards">
+                <img src="{{ city.icon_url }}" alt="{{ city.name }}">
+                    <h2 text-lg font-bold mb-2>{{ city.name }}</h2>    
+                    <p text-sm text-gray-700>{{ city.temperature }} °C</p>
+                </div>
+                {% endfor %}
+    </div>
+       
+
+
+
+
+</body>
+</html>

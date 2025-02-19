@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    overflow-x: hidden;
+    font-family: 'Roboto';
+}
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(12,190,255,1) 78%);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+h1 {
+    background: white;
+    animation: fadeIn 5s;
+    font-size: 72px;
+    /* background: -webkit-linear-gradient(#1500fe, #00ffea); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p{
+    display: flex;
+    justify-content: center;
+}
+
+.findCity{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text] {
+    padding: 10px;
+    border: none;
+    border-radius: 50px;
+    width: 15vw;
+  }
+button {
+  margin: 5px;
+  padding:10px;
+  border:none;
+  background-color:#3F51B5;
+  color:#fff;
+  font-weight:600;
+  border-radius:50px;
+  width: 5vw;
+
+
+}
+
+.listOfCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.cards{
+    text-align: center;
+    background-color: white;
+    width: 50vw;
+    height: 20vh;
+    margin: 5vw;
+    box-shadow: 0px 5px 20px #214ccb; /*4*/
+    border-radius: 50px;
+}
+
+.cards:hover{
+    box-shadow: 0px 5px 20px #b09cec; 
+    border-radius: 55px;
+}
+
+
