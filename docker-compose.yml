@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    image: my_flask_app
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - data:/app/data
+    environment:
+      - API_KEY=c44171366d41778194a8018ab5156f06
+    restart: unless-stopped
+
+volumes:
+  data:
